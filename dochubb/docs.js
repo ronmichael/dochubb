@@ -136,6 +136,7 @@ $(function () {
             var page = pages[pn];
             var pc2 = page.sections.length;
 
+            // yes, this is very ugly code
 
             n += "<div class='panel panel-default'><div class='panel-heading'><h4 class='panel-title level1'>";
             n += "<a data-page=" + pn + " data-toggle='collapse' data-parent='#browse' href='#section" + pn + "'>" + page.title + "</a></h4></div>";
@@ -248,6 +249,8 @@ $(function () {
             var s2 = "";
 
             var rx = new RegExp(q, "i");
+
+            // more ugly code
 
             var pc = pages.length;
             for (var pn = 0; pn < pc; pn++) {
