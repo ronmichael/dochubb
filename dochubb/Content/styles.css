@@ -1,0 +1,206 @@
+﻿*
+{
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+}
+
+
+#docnav
+{
+
+    padding: 15px 15px 30px 20px;
+    position: fixed;
+    left: 0px;
+    right: 300px;
+    width: 300px;
+    top: 0px;
+    bottom: 0px;
+    border: solid 1px silver;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#content    
+{
+    font-size: 16px;
+    padding: 5px 25px 25px 25px;
+    position: fixed;
+    left: 300px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    border: solid 1px silver;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+#content.loading
+{
+    opacity: .4;
+}
+
+.searchbox
+{
+    margin-bottom: 25px;
+}
+
+.panel-group
+{
+    margin-bottom: 0px;
+
+}
+
+.panel
+{
+    background-color: white;
+    border: none;
+    box-shadow: none;
+
+
+}
+
+.panel-heading, .panel-default .panel-heading
+{
+    background-color: white;
+    border: none;
+    padding: 0px;
+}
+
+
+
+.panel-default>.panel-heading+.panel-collapse .panel-body {
+    border-top: none;
+    padding-top: 10px;
+}
+
+.panel-body
+{
+    padding: 5px 15px 5px 15px;
+
+}
+
+h4.panel-title {
+    font-size: 15px;
+    line-height: 18px;
+}
+
+
+#docnav a
+{
+    color: black !important;
+    font-weight: normal;
+    text-decoration: none;
+    cursor: pointer;
+}
+#docnav a:hover
+{
+    color: blue !important;
+}
+
+h4.level1 a
+{
+    font-weight: 600 !Important;
+}
+
+
+
+h1 {
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+
+.searchbox
+{
+    margin-left: -5px;
+}
+
+#searchclear {
+    display: none;
+    font-size: 15px;
+    position: absolute;
+    color: silver;
+    cursor: pointer;
+    right: 25px;
+    margin-top: 25px;
+}
+
+
+#searchclear:hover {
+    color: red;
+}
+
+
+
+#searchresults
+{
+    display: none;
+    padding: 10px 0px 0px 0px;
+    line-height: 17px;
+    font-size: 14px;
+    overflow: hidden;
+
+}
+
+.searchhighlight
+{
+    background-color: yellow;
+    
+}
+
+#searchresults div
+{
+    padding: 0px 0px 0px 0px;
+    cursor: pointer;
+    overflow: hidden;
+    margin-bottom: 5px;
+    border-radius: 3px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+   
+}
+
+    #searchresults div.level1 {
+     
+    }
+    #searchresults div.level2 {
+        margin-left: 15px;
+
+    }
+    #searchresults div.level3 {
+        margin-left: 30px;
+    
+    }
+       
+    #searchresults div.placeholder {
+        color: silver;
+    }
+
+
+#searchresults div span
+{
+    font-size: 12px;
+    display: block;
+    color: darkgray;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+}
+
+#searchresults a {
+    color: black;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-wrap: none;}
+
+#searchresults div:hover span, #searchresults div:hover a {
+    text-decoration: none;
+    color: red;
+}
+#searchresults div.active {
+    background-color: yellow;
+}
